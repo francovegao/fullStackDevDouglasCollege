@@ -1,0 +1,6 @@
+{
+  "type":"module",     
+  "dependencies": {
+    "pokemon": "^2.3.6"
+  }
+}
