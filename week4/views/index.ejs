@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hey Dont get bored</h1>
+    <h2>Here is a fun activity that you can do</h2>
+    <section>
+        <h2>Activity:</h2>
+        <% if(locals.data){ %>
+            <h4><%= data.activity %></h4>
+        <p>Participants: <%= data.participants %></p>
+        <p>Type: <%= data.type %></p>
+        <% } %>
+
+        <% if(locals.error){ %>
+            <h4><%= error %></h4>
+        <% } %>
+    </section>
+
+    <div>
+        <form method="post" action="/">
+            <p>Choose an activity type: </p>
+            <select name="type" id="type">
+                <option value="">Random</option>
+                <option value="education">Education</option>
+                <option value="recreational">Recreational</option>
+                <option value="social">Social</option>
+                <option value="charity">Charity</option>
+                <option value="cooking">Cooking</option>
+                <option value="relaxation">Relaxation</option>
+                <option value="busywork">Busywork</option>
+            </select>
+
+            <p>Select number of participants: </p>
+            <select name="participants" id="participants">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <button>Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
