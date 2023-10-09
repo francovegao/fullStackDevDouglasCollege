@@ -1,29 +1,39 @@
 var quotes = data;
 createSlides(quotes);
 
-// create a function to generate all quote slides
+// create a function tos generate all quote slides
 function createSlides(allquotes) {
-// <!-- Slideshow container -->
-// <div class="slideshow-container">
-// <!-- Full-width slides/quotes -->
-// <!-- <div class="mySlides">
-// <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-// <p class="author">- John Keats</p>
-// </div>
-// <div class="mySlides">
-// <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-// <p class="author">- Ernest Hemingway</p>
-// </div>
 
-const container = document.querySelector('.slideshow-container');
+//read the quotes and store it in Array
  const quotesArray=Array.from(allquotes);
  console.log(quotesArray);
 
- quotesArray.forEach( item => console.log(item.author));
+// Get the container div
+const container = document.querySelector('.slideshow-container');
+
+//Creating functions for UI , creating the content of the page from javascript
+const insertQuote = item => (`<div class="mySlides">
+<q>${item.quote}</q>
+<p class="author">- ${item.author}</p>
+</div>`)
+
+// Add data to the page
+quotesArray.forEach(item=> 
+    container.insertAdjacentHTML( `beforeend`, insertQuote(item),
+    console.log(item.quote + item.author) ));
+
 }
+
+showSlides(6);
 // create a function to show one of the slides that is reached
 function showSlides(n) {
- // ...
+// Get the container div
+const container = document.querySelector('.slideshow-container');
+
+slideLocation.innerHTML = container;
+
+console.log(slideLocation);
+    
 }
 // Create a function that run the showSlides function when the mouse is clicked
 function plusSlides(n) {
@@ -35,3 +45,33 @@ function plusSlides(n) {
 // add the slides into the selected location
 slideLocation.innerHTML = allslides;
 // start the slideshow with the first slide. run showSlides(slideIndex)
+
+
+/******************************************
+*****************************************/
+
+/*** 
+ * `quotes` array 
+***/
+
+
+
+/***
+ * `getRandomQuote` function
+***/
+
+
+
+/***
+ * `printQuote` function
+***/
+
+
+
+/***
+ * click event listener for the print quote button
+ * The code will look like the following. You need to complete it.
+
+***/
+
+document.getElementById('load-quote').addEventListener...
