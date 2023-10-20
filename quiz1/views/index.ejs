@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hello User</h2>
+
+    <div>
+        <form method="post" action="/">
+            <input type="text" name="userName">
+            <button>Add User</button>
+        </form>
+    </div>
+
+    <section>
+        <% if(locals.data){ %>
+            <p>User 1: <%=  data.userName %></p>
+        <% } %>
+
+        <% if(locals.error){ %>
+            <p><%= error %></p>
+        <% } %>
+    </section>
+
+</body>
+</html>
