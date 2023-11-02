@@ -24,3 +24,12 @@ npm install ejs
 
 npm install node-fetch
 
+## Create react app
+
+npm init react-app app-name
+
+to start the app:
+
+  cd quote-cards-practice
+  npm start
+
