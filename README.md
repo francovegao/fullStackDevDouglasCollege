@@ -87,3 +87,8 @@ mongoose.connect(
 then upload to github and use the deployment service to connect to the githup repository
 
 
+## Create fullstack mern application
+
+First build a simple server with the necessary functions and conection to mongo DB
+
+
