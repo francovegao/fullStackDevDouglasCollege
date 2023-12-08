@@ -87,8 +87,22 @@ mongoose.connect(
 then upload to github and use the deployment service to connect to the githup repository
 
 
-## Create fullstack mern application
+## Create fullstack mern application exam practice
 
-First build a simple server with the necessary functions and conection to mongo DB
+1. First build a simple server with the necessary functions and conection to mongo DB
+2. npm install on backend folder
+3. node <filename> to run the server
+4. Change the database name on the url connection
+5. Change the schema for the collection
+6. Change the add parameters, edit parameters to match the schema and test
+7. upload server to repository, add gitignore
+8. deploy on render choosing webservice use instructions above
 
+Now create the frontend
 
+1. Create react app
+2. install react-router-dom, axios and bootstrap using npm i axios, react-router-dom
+3. Build router on app 
+4. Build component and use axios to fetch data using deployed server url
+5. Upload frontend to new github repository
+6. If using netlify change build command to npm start
